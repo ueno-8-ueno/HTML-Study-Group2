@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML・CSS勉強会ハンズオン2</title>
+
+    <!--styleタグの中に、適用させたいCSSプロパティを記述します-->
+    <style>
+        *{
+            /* これらはリセットCSSといい、ブラウザでデフォルトでかかっている余分な余白を初期化します */
+            /* 「*」セレクタは「全ての要素」を指します(ワイルドカード) */
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif; /* フォントを変更 */
+            background-color: #f0f0f0;    /* 🟥背景色を変更しましょう(色は任意です) */
+            text-align: center;             /* 要素内の文字を中央寄せ */
+        }
+        .container {
+            width: 800px;                              /* 🟥幅を800pxにしましょう */
+            margin: 20px auto;                         /* "外側"の余白を上下20px、左右を中央寄せ(auto)に設定 */
+            padding: 20px;                             /* 🟥"内側"の余白を20px空けましょう */
+            background-color: #fff;                  /* 🟥背景色を変更しましょう(色は任意です) */
+            border-radius: 8px;                        /* 🟥要素の4つ角を8px分だけ丸くしましょう */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 要素の縁に薄い影を設定 */
+        }
+        h1, h2, h3 {
+            margin: 15px auto; /* 🟥"外側"の余白を上下15px、左右を中央寄せにしましょう */
+            color: #333;     /* 🟥文字の色を変更しましょう(色は任意です) */
+        }
+        p {
+            color: #666; /* 🟥文字の色を変更しましょう(色は任意です) */
+        }
+        img {
+            width: 100%;       /* 親要素の幅を最大値としたときのimgの幅(この場合は最大値100%の幅を取る) */
+            height: auto;      /* 中身に合わせて高さが伸び縮みする */
+            display: block;    /* ブロック要素にする(改行するイメージ) */
+            margin: 20px auto; /* 🟥"外側"の余白を上下20px、左右を中央寄せにしましょう */
+        }
+        li{
+            list-style: none; /* 🟥リストの先頭の丸を消しましょう */
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to HTML and CSS</h1>
+        <p>HTML（HyperText Markup Language）はウェブページを構築するための基本的な言語です。</p>
+        <p>CSS（Cascading Style Sheet）はHTMLと組み合わせて使用することで、Webサイトの色やサイズ、<br>レイアウトなどのデザインを定義するための言語です。</p>
+        <img src="./picture.png">
+
+        <h2>What You Will Learn</h2>
+        <p>この勉強会では、以下のような内容を勉強します。</p>
+        <ul>
+            <li>HTMLの基本構造</li>
+            <li>タグと要素の使い方</li>
+            <li>デベロッパーツールの使い方</li>
+            <li>CSSの基本構造 (new!!)</li>
+        </ul>
+
+        <h3>Get Ready to Dive into HTML and CSS!</h3>
+        <p>このハンズオンセッションでは、実際にコードを書いてみましょう。</p>
+        <p>
+            理解が深まったら、ヒント以外の箇所もご自由に書き加えてもらってOKです!<br>
+            (画像を増やしたり、あえて右寄せにしてみたり...)
+        </p>
+    </div>
+</body>
+
+</html>
